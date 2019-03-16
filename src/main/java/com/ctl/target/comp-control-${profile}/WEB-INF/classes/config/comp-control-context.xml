@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:vld="http://www.springmodules.org/validation/bean/validator"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans
+                  http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                  http://www.springframework.org/schema/context
+                  http://www.springframework.org/schema/context/spring-context-2.5.xsd
+                  http://www.springmodules.org/validation/bean/validator 
+                  http://www.springmodules.org/validation/bean/validator.xsd">
+
+   <!--
+   // 서비스 빈     
+   <bean class="com.store.comp.control.service.SchedulerService"/>
+   <bean class="com.store.comp.control.service.CacheService"/>
+   -->
+
+   <bean id="hostNameShellCommander" class="com.company.core.util.ShellCommander">
+      <property name="command" value="hostname"/>
+   </bean>
+   
+   <bean id="testJob1" class="com.store.comp.control.schedule.TestJobBean"/>
+   <bean id="testJob2" class="com.store.comp.control.schedule.TestJobBean"/>
+   <bean id="testJob3" class="com.store.comp.control.schedule.TestJobBean"/>
+
+</beans>

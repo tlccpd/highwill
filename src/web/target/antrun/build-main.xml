@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <mkdir dir="D:\highwill\works\WEBAPP\dev\web\target/store-web-${profile}/WEB-INF/classes"/>
+  <copy file="src/main/resources/log4j/log4j-${profile}.xml" includeEmptyDirs="false" tofile="D:\highwill\works\WEBAPP\dev\web\target/store-web-${profile}/WEB-INF/classes/log4j.xml" failonerror="false"/>
+</target>
+</project>

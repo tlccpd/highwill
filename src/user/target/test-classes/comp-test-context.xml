@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:vld="http://www.springmodules.org/validation/bean/validator"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans
+                  http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                  http://www.springframework.org/schema/context
+                  http://www.springframework.org/schema/context/spring-context-2.5.xsd
+                  http://www.springmodules.org/validation/bean/validator 
+                  http://www.springmodules.org/validation/bean/validator.xsd">
+                  
+   <context:component-scan base-package="com.store"/>
+   
+   <bean id="digesterMD5" class="com.company.core.crypto.DigesterTemplate">
+      <property name="algorithm" value="MD5"/>
+   </bean>   
+
+</beans>
